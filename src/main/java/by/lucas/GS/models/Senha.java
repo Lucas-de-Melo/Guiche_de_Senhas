@@ -10,7 +10,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "SENHAS")
 public class Senha {
-  
+
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
@@ -22,7 +22,32 @@ public class Senha {
   private String tipo;
 
   @Column(nullable = false)
-  private Boolean atendida; 
+  private Boolean atendida;
 
-  
+  // GETTERS AND SETTERS //
+
+  public int getNumero() {
+    return numero;
+  }
+
+  public void setNumero(int numero) {
+    this.numero = numero;
+  }
+
+  public String getTipo() {
+    return tipo;
+  }
+
+  public void setTipo(String tipo) {
+    this.tipo = tipo;
+  }
+
+  public Boolean getAtendida() {
+    return atendida;
+  }
+
+  public void setAtendida(Boolean atendida) {
+    this.atendida = atendida;
+  }
+
 }
