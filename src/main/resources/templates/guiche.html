@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Guichê</title>
+</head>
+<body>
+    <h1>Guichê</h1>
+    <p>Olá, bem-vindo ao guichê!</p>
+    <p>Retire sua senha</p>
+    <!-- Conteúdo da sua view aqui -->
+    <form method="post">
+      <button type="submit" name="tipoSenha" value="geral" formaction="/gerar-senha-geral">Senha Geral</button>
+      <button type="submit" name="tipoSenha" value="prioritaria" formaction="/gerar-senha-prioritaria">Senha Prioritária</button>
+      <button type="submit" name="tipoSenha" value="exames" formaction="/gerar-senha-exames">Senha Exames</button>
+  </form>
+</body>
+</html>
